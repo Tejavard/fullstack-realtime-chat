@@ -28,13 +28,13 @@ const App = () => {
 
   if (isCheckingAuth && !authUser)
     return (
-      <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center h-screen bg-base-100">
         <Loader className="size-10 animate-spin" />
       </div>
     );
 
   return (
-    <div data-theme={theme}>
+    <div data-theme={theme} className="min-h-screen bg-base-100 text-base">
       <Navbar />
 
       <Routes>
